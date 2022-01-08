@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #364044;
+    font-family: Futura Lt BT, Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+}
+main {
+    padding-bottom: 40px;
+    margin:0 auto;
+}
+
+ h2{
+    display:table;
+    font-family: Reality Check DEMO, Arial, Helvetica, sans-serif;
+    font-size: 35pt;
+    background-color: #61fcf6;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 20pt;
+}
+
+/* HEADER */
+
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header > img {
+    width: 80vw;
+}
+header > h1 {
+    display: inline-block;
+    display:table;
+    font-family: Reality Check DEMO, Arial, Helvetica, sans-serif;
+    font-size: 40pt;
+    background-color: #61fcf6;
+    margin: 0.5em;
+    padding: -0.5em;
+
+}
+
+header > .mobile_nav >i {
+    position: absolute;
+    font-size: 30px;
+    color: #f07919;
+    background-color: white;
+    padding:0.2em;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    width:40px;
+}
+
+header > .mobile_nav >i:hover ul {
+    visibility: visible;
+    z-index: +5;
+}
+header >.mobile_nav> i>ul {
+    list-style-type: none;
+    position:absolute;
+    visibility: hidden;
+    background-color: white;
+    color:black;
+    font-size: 10pt;
+    font-family: Futura Lt BT, Arial, Helvetica, sans-serif;
+    font-style: normal;
+   left:-270px;
+    width: 100vw;
+    text-align: center;
+    line-height: 3em;
+    font-size: 15pt;
+    margin:0 auto;
+
+}
+header >.mobile_nav >i>ul>li>a{
+    text-decoration: none;
+    color:black;
+    transition: 0.5s;
+}
+header> .mobile_nav >i>ul>li:hover{
+    background-color:#f07919 ;
+}
+header >.mobile_nav >i>ul>li:hover a, header >#mobile_nav > i >ul>li:hover i {
+    color:white;
+}
+
+header > .desktop_nav {
+    visibility: hidden;
+    background-color: #364044;
+    width:100vw;
+    height: 50px;
+    margin-bottom: -30px;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+header > .desktop_nav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    justify-content: flex-end;
+}
+header > .desktop_nav > ul>li >a {
+    text-decoration: none;
+    font-family: Futura Bk BT, Arial, Helvetica, sans-serif; 
+    font-size:20pt ;
+    color:white;
+    transition: 0.5s;
+}
+header > .desktop_nav >ul >li>i {
+    color: white;
+    font-size: 20pt;
+    transition: 0.5s;
+}
+header > .desktop_nav >ul >li:hover a, header > .desktop_nav >ul >li:hover i {
+    color:#f07919;
+}
+/*NEWS SECTION */
+main >section {
+    padding: 20px;
+    position: relative;
+    margin-bottom:80px;
+}
+.news_container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+main >section >div >article{
+    margin: 20px 0px 20px 20px;
+    color: white;
+    font-family:Futura Lt BT, Arial, Helvetica, sans-serif; 
+    position: relative;
+    padding-bottom: 40px;
+}
+main >section >div >article >p:first-child{
+    display:table;
+    background-color: white;
+    color:black;
+    border-radius:30px ;
+    padding-left:0.6em;
+    padding-right:0.6em;
+    margin-bottom: 1em;
+}
+
+main >section >div >article >p:nth-of-type(2) {
+    margin-bottom: 10px;
+    font-size: 16pt;
+}
+main >section >div >article >a {
+    text-decoration: none;
+    text-align: end;
+    color: #f07919;
+    font-size: 16pt;
+    position:absolute;
+    right: 20px;
+    transition: 0.5s;
+}
+main >section >div >article >a:hover {
+    color: white;
+}
+
+/*lineup*/
+.lineup_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.lineup>div>article {
+    margin-right: 50px;
+}
+.lineup > div>article > figure {
+    margin-left: 15px;
+    position: relative;
+}
+.lineup > div>article > figure >img {
+    width: 80vw;
+    transition: 0.5s;
+}
+.lineup > div>article > figure:hover img{
+    filter: grayscale(100);
+}
+
+.lineup >div> article > figure >figcaption {
+    position: absolute;
+    bottom:60px;
+    left:-30px;
+    display:table;
+    font-family: Reality Check DEMO, Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    background-color: #61fcf6;
+    color:white;
+    padding:0.25em;
+    
+}
+
+
+
+/* FOOTER*/
+
+footer {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:50px
+}
+footer>a {
+    text-decoration: none;
+    font-family:Futura Lt BT, Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    color:white;
+    transition: 0.5s;
+}
+footer >i {
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+}
+footer >i:hover , footer >a:hover{
+    color:#f07919;
+}
+
+@media only screen and (min-width: 321px) {
+   header>.mobile_nav >i> ul{
+       left: -325px;
+    
+    }   
+}
+@media only screen and (min-width: 376px) {
+    header>.mobile_nav >i> ul{
+        left: -376px;
+     
+     }   
+ }
+
+ @media only screen and (min-width: 426px) {
+   header >.mobile_nav >i> ul{
+        left: -718px;
+     }    
+     main >section> div> article {
+        width:350px;
+        display: inline-block;
+    }
+    .lineup>div >article>figure >img {
+        width:350px;
+    }
+    
+ }
+
+ @media only screen and (min-width: 769px) {
+    header>.mobile_nav {
+        visibility: hidden;
+    }
+    header > .desktop_nav {
+        visibility: visible;
+    }
+
+    main{
+        padding:70px;
+    }
+    .news>div >article {
+        margin-right: 50px;
+    }
+    
+    main >section> div> article {
+        width:340px;
+        display: inline-block;
+    }
+    
+}
+/*main eistellungen*/
+
+@media only screen and (min-width: 1440px) {
+    main {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
+

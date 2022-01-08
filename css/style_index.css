@@ -1,0 +1,107 @@
+
+
+
+
+#startcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main > #startcontent > p {
+    color: white;
+    font-family:Futura Lt BT, Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    margin:20px;
+    padding-top: 30px;
+}
+#startcontent >p >span {
+    font-family: Futura Bk BT, Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+}
+#startnext {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0px;
+    padding:20px;
+    display: flex;
+    align-items: center;
+}
+#startnext >p {
+    font-family:  Reality Check DEMO, Arial, Helvetica, sans-serif; 
+    text-align: center;
+    font-size: 25pt;
+}
+#startnext >p>span {
+    color:white;
+}
+
+
+
+
+#newsletter >form {
+    width:320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+#newsletter > form> label {
+    color:white;
+
+}
+#newsletter >form>input{
+    width:320px;
+    height:4em;
+}
+#newsletter >form>input::placeholder {
+    font-size: 16pt;
+    font-family:Futura Lt BT, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#newsletter >form>button {
+    padding:0.5em;
+    background-color:#f07919 ;
+    border:none;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    font-family:Futura Lt BT, Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    transition: 0.5s;
+}
+/*button*/
+main >section > a>button {
+    background-color:#f07919 ;
+    border:none;
+    border-radius: 2px;
+    padding: 0.5em;
+    margin-bottom: 20px;
+    font-family:Futura Lt BT, Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 40px;
+    font-size: 16pt;
+    transition: 0.5s;
+}
+main> section > a >button:hover ,#newsletter >form>button:hover{
+    background-color: white;
+    color: #f07919;
+}
+
+
+@media only screen and (min-width: 426px) {
+    
+    
+}
+
+@media only screen and (min-width:1025px){
+    #startcontent>p {
+        width:60%;
+    }
+    #startcontent {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
